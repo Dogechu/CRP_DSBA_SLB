@@ -1,6 +1,6 @@
-# SLB Corporate Project 
+# SLB Project
 
-## 1. Project Context
+## Project Code
 
 This repository is developed in the context of the corporate Data Science for Business Analytics (DSBA) project with SLB.  
 The project's goal is to automate the detection of geological formation change points (markers) from well log data, replacing the traditional manual geological interpretation process. Two modeling approaches are implemented:
@@ -9,23 +9,26 @@ The project's goal is to automate the detection of geological formation change p
 
 This work contributes to improved speed, scalability, and consistency in subsurface reservoir characterization—an essential task in industries like petroleum extraction, geothermal energy, and carbon capture.
 
+## Structure of Repository
 
-
-## 2. Tree (Structure of the Repo)
+## Tree (Structure of the Repo)
 
 <pre> ``` 
-│  README.md
+.
+│   README.md
 │
-├─Model_GNN
-│      requirements.txt.txt
+├───Model_GNN
+│       Model_gnn.ipynb
+│       requirements.txt
+│       pyproject.toml
 │
-└─Model_Transformer
+└───Model_Transformer
         Model_transformer.ipynb
+        requirements.txt
         pyproject.toml
-        requirements.txt.txt ```<pre>
+``` </pre>
 
-
-## 3. Dependencies and Environment
+## Dependencies and Environment
 
 Each model folder contains its own environment specification to ensure compatibility and reproducibility.
 
@@ -48,8 +51,9 @@ To set up the environment using Poetry instead, run:
 ```bash
 poetry install 
 ```
+
+## Explanation of Each Model
                 
-## 4. Explanation of Each Model
 ### `model_gnn/` – Graph Neural Network Approach
 This approach formulates the marker detection as a node classification task:
 - Each well is modeled as a node with features derived from log sequences.
@@ -63,6 +67,5 @@ This model integrates temporal modeling and graph structure:
 - Architecture: encoder-decoder Transformer enriched with graph-aware embeddings.
 - Each graph is constructed per marker type, where wells are nodes.
 - Goal: directly predict the marker depth for each well by capturing inter-well relationships and sequential patterns.
-
 
 
