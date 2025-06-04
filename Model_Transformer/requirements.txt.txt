@@ -1,0 +1,9 @@
+numpy<2.0
+torch==2.0.0
+torchdata==0.6.0
+dgl==1.0.1 -f https://data.dgl.ai/wheels/repo.html
+pyvista==0.39.0
+networkx==3.4.2
+pandas
+matplotlib
+fastparquet

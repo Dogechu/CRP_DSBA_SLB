@@ -1,0 +1,23 @@
+[project]
+name = "model-transformer"
+version = "0.1.0"
+description = "Transformer-based model with DGL and geological data"
+authors = [{ name = "Tonghan_WEN", email = "wentonghan2001@163.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+    "numpy<2.0",
+    "torch==2.0.0",
+    "torchdata==0.6.0",
+    "dgl==1.0.1",
+    "pyvista==0.39.0",
+    "networkx==3.4.2",
+    "pandas",
+    "matplotlib",
+    "fastparquet"
+]
+
+[[tool.poetry.source]]
+name = "dgl"
+url = "https://data.dgl.ai/wheels/repo.html"
