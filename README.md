@@ -9,7 +9,7 @@ The project's goal is to automate the detection of geological formation change p
 
 This work contributes to improved speed, scalability, and consistency in subsurface reservoir characterization—an essential task in industries like petroleum extraction, geothermal energy, and carbon capture.
 
----
+
 
 ## 2. Tree (Structure of the Repo)
 
@@ -23,7 +23,7 @@ This work contributes to improved speed, scalability, and consistency in subsurf
         Model_transformer.ipynb
         pyproject.toml
         requirements.txt.txt ```<pre>
----
+
 
 ## 3. Dependencies and Environment
 
@@ -31,11 +31,11 @@ Each model folder contains its own environment specification to ensure compatibi
 
 Before running any model notebooks or scripts, **you must first install the required dependencies**. Navigate to the specific model folder in your terminal and execute:
 
-``pip install -r requirements.txt ``
+```bash
+pip install -r requirements.txt 
+```
 
-
-
-In addition, each folder also includes a pyproject.toml file configured for use with Poetry. This file defines:
+In addition, each folder also includes a `pyproject.toml` file configured for use with Poetry. This file defines:
 
 - the build system (poetry)
 
@@ -45,12 +45,11 @@ In addition, each folder also includes a pyproject.toml file configured for use 
 
 To set up the environment using Poetry instead, run:
 
-``poetry install ``
-
----
-
+```bash
+poetry install 
+```
+                
 ## 4. Explanation of Each Model
-
 ### `model_gnn/` – Graph Neural Network Approach
 This approach formulates the marker detection as a node classification task:
 - Each well is modeled as a node with features derived from log sequences.
@@ -65,5 +64,5 @@ This model integrates temporal modeling and graph structure:
 - Each graph is constructed per marker type, where wells are nodes.
 - Goal: directly predict the marker depth for each well by capturing inter-well relationships and sequential patterns.
 
----
+
 
