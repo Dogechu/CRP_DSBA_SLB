@@ -13,7 +13,16 @@ This work contributes to improved speed, scalability, and consistency in subsurf
 
 ## 2. Tree (Structure of the Repo)
 
-
+<pre> ``` 
+│  README.md
+│
+├─Model_GNN
+│      requirements.txt.txt
+│
+└─Model_Transformer
+        Model_transformer.ipynb
+        pyproject.toml
+        requirements.txt.txt ```<pre>
 ---
 
 ## 3. Dependencies and Environment
@@ -22,8 +31,7 @@ Each model folder contains its own environment specification to ensure compatibi
 
 Before running any model notebooks or scripts, **you must first install the required dependencies**. Navigate to the specific model folder in your terminal and execute:
 
-```bash
-pip install -r requirements.txt ```
+``pip install -r requirements.txt ``
 
 
 
@@ -37,8 +45,7 @@ In addition, each folder also includes a pyproject.toml file configured for use 
 
 To set up the environment using Poetry instead, run:
 
-```bash
-poetry install ```
+``poetry install ``
 
 ---
 
