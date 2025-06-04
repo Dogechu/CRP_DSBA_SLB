@@ -9,9 +9,10 @@ The project's goal is to automate the detection of geological formation change p
 
 This work contributes to improved speed, scalability, and consistency in subsurface reservoir characterization—an essential task in industries like petroleum extraction, geothermal energy, and carbon capture.
 
-## Structure of Repository
+Due to privacy and confidentiality concerns from the partnering company (SLB), we do not provide access to the original data sources used in this project.
 
-## Tree (Structure of the Repo)
+
+## Structure of Repository
 
 <pre> ``` 
 .
