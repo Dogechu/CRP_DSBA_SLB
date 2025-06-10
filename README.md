@@ -16,17 +16,16 @@ Due to privacy and confidentiality concerns from the partnering company (SLB), w
 
 <pre> ``` 
 .
-│   README.md
+│  README.md
 │
-├───Model_GNN
-│       Model_gnn.ipynb
-│       requirements.txt
-│       pyproject.toml
+├─Model Graph Sage
+│      Graph Sage CRP.ipynb
+│      graphsage_model.pth
 │
-└───Model_Transformer
+└─Model_Transformer
         Model_transformer.ipynb
-        requirements.txt
         pyproject.toml
+        requirements.txt.txt
 ``` </pre>
 
 ## Dependencies and Environment
